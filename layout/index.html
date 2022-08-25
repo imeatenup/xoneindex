@@ -1,0 +1,25 @@
+{{define "layout"}}
+<h1>Index of {{.Path}}</h1>
+<hr>
+<table border="0">
+<tr>
+    <td>
+        {{if ne .Path "/"}}<a href="{{if .ParentPath}}{{.ParentPath}}{{else}}/{{end}}">../</a>{{end}}
+    </td>
+</tr>
+{{range $index, $value := .Folder.Value}}
+    <tr>
+        <td>
+            <a href="{{$value.ParentReference.Path}}/{{$value.Name}}">{{$value.Name}}</a>
+        </td>
+        <td>
+            {{$value.FileSystemInfo.LastModifiedDateTime}}
+        </td>
+        <td>
+            {{$value.Size}}Byte
+        </td>
+    </tr>
+{{end}}
+</table>
+<hr>
+{{end}}
