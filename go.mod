@@ -5,6 +5,8 @@ go 1.18
 require (
 	github.com/google/uuid v1.3.0
 	github.com/pkg/errors v0.9.1
+	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common v1.0.480
+	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/scf v1.0.480
 	golang.org/x/oauth2 v0.0.0-20220808172628-8227340efae7
 )
 
