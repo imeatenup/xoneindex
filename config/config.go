@@ -7,6 +7,9 @@ const (
 	CALLBACK      = "/callback"
 	STATE         = "****"
 	ROOT_PATH     = "/.xoneindex" // eg "" "/.xoneindex"
+	// scf
+	XINDEX_TENCENTCLOUD_SECRETID  = "******"
+	XINDEX_TENCENTCLOUD_SECRETKEY = "******"
 )
 
 var (
